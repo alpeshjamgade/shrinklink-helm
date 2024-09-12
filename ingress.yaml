@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: shrink-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: shrinklinks.com
+      http:
+        paths:
+          - path: /url
+            pathType: Prefix
+            backend:
+              service:
+                name: shrinklink
+                port:
+                  number: 1212
