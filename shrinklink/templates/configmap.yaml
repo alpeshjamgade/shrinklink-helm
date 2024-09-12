@@ -1,0 +1,18 @@
+apiVersion: v1
+data:
+  config.yaml: |-
+    http_port: "1212"
+    redis_host: "cache"
+    redis_port: "6379"
+    db_host: "database"
+    db_username: "postgres"
+    db_password: "postgres"
+    db_port: "5432"
+    db_name: "shrinklink"
+    domain: "https://shrinklink:1212"
+    log_level: "info"
+    log_encoding: "json"
+kind: ConfigMap
+metadata:
+  name: shrinklink
+  namespace: default
