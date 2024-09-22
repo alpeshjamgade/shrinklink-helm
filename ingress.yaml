@@ -15,7 +15,7 @@ spec:
                 name: shrinklink-frontend
                 port:
                   number: 80
-          - path: /url
+          - path: /api
             pathType: Prefix
             backend:
               service:

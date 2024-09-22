@@ -9,7 +9,7 @@ data:
     db_password: "postgres"
     db_port: "5432"
     db_name: "shrinklink"
-    domain: "https://shrinklink:1212"
+    domain: "http://shrinklinks.com"
     log_level: "info"
     log_encoding: "json"
 kind: ConfigMap
