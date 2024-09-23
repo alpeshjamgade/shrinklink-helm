@@ -1,0 +1,5 @@
+controller:
+  service:
+    enabled: true
+    annotations:
+      service.beta.kubernetes.io/do-loadbalancer-enable: "true"
