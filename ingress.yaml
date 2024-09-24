@@ -5,8 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: shrinklinks.in
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
@@ -22,3 +21,8 @@ spec:
                 name: shrinklink
                 port:
                   number: 1212
+  defaultBackend:
+    service:
+      name: shrinklink-frontend
+      port:
+        number: 80
